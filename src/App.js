@@ -20,7 +20,7 @@ function App() {
     //     </a>
     //   </header>
     // </div>
-    <div><h1>See you next year!</h1></div>
+    <div><h1>See you next year! - Rudy Balbin</h1></div>
   );
 }
 
