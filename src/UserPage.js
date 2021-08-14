@@ -1,5 +1,5 @@
 import React from 'react';
-// import Container from '@material-ui/core/Container';
+import Container from '@material-ui/core/Container';
 
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
@@ -13,7 +13,7 @@ const UserPage = () => {
      const [value, setValue] = React.useState(0);
     return (
             <>
-         
+            <Container maxWidth='xs'>
                 <BottomNavigation
                 className={classes.root}
                 value={value}
@@ -27,7 +27,7 @@ const UserPage = () => {
                 <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
             
             </BottomNavigation>
-          
+            </Container>
         </>
     )
 }
