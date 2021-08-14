@@ -6,7 +6,7 @@ import BottomNav from './components/BottomNav';
 class UserPage extends Component {
     render() {
         return (
-            <Container>
+            <Container maxWidth="xs">
                 <BottomNav></BottomNav>
             </Container>
         )
