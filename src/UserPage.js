@@ -9,13 +9,13 @@ import LocationOnIcon from '@material-ui/icons/LocationOn';
 import useStyles from './components/compStyles/BottomNavStyle';
 
 const UserPage = () => {
-     const classes = useStyles();
+    const classes = useStyles();
      const [value, setValue] = React.useState(0);
     return (
             <>
             <Container>
                 <BottomNavigation
-                className={classes.stickToBottom}
+                className={classes.root}
                 value={value}
                 onChange={(event, newValue) => {
                      setValue(newValue);
