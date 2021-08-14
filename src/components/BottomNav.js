@@ -10,12 +10,12 @@ import LocationOnIcon from '@material-ui/icons/LocationOn';
 
 
 const BottomNav = () => {
-    const classes = useStyles();
+  
     const [value, setValue] = React.useState(0);
     return (
         <>
             <BottomNavigation
-                className={classes.root}
+               
                 value={value}
                 onChange={(event, newValue) => {
                      setValue(newValue);
