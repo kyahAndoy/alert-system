@@ -6,15 +6,16 @@ import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import RestoreIcon from '@material-ui/icons/Restore';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
-
+import useStyles from './compStyles/BottomNavStyle';
 
 const UserPage = () => {
+     const classes = useStyles();
      const [value, setValue] = React.useState(0);
     return (
             <>
             <Container>
-                 <BottomNavigation
-                
+                <BottomNavigation
+                className={classes.stickToBottom}
                 value={value}
                 onChange={(event, newValue) => {
                      setValue(newValue);
@@ -29,7 +30,6 @@ const UserPage = () => {
             </Container>
         </>
     )
-    
 }
 
 export default UserPage;
