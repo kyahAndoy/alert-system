@@ -1,12 +1,12 @@
 import React from 'react';
 import useStyles from './compStyles/BottomNavStyle';
 
-
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-import RestoreIcon from '@material-ui/icons/Restore';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import LocationOnIcon from '@material-ui/icons/LocationOn';
+import VideocamIcon from '@material-ui/icons/Videocam';
+import PanoramaIcon from '@material-ui/icons/Panorama';
+import FolderIcon from '@material-ui/icons/Folder';
+
 
 
 const BottomNav = () => {
@@ -22,9 +22,9 @@ const BottomNav = () => {
                 }}
       showLabels
             >
-                <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
-                <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-                <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
+                <BottomNavigationAction label="Videos" icon={<VideocamIcon />} />
+                <BottomNavigationAction label="Images" icon={<PanoramaIcon />} />
+                <BottomNavigationAction label="Downloads" icon={<FolderIcon />} />
             </BottomNavigation>
         </>
     )
