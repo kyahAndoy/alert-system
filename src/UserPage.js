@@ -3,9 +3,9 @@ import Container from '@material-ui/core/Container';
 
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-import RestoreIcon from '@material-ui/icons/Restore';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import LocationOnIcon from '@material-ui/icons/LocationOn';
+import VideocamIcon from '@material-ui/icons/Videocam';
+import PanoramaIcon from '@material-ui/icons/Panorama';
+import FolderIcon from '@material-ui/icons/Folder';
 import useStyles from './components/compStyles/BottomNavStyle';
 
 const UserPage = () => {
@@ -13,7 +13,7 @@ const UserPage = () => {
      const [value, setValue] = React.useState(0);
     return (
             <>
-            <Container maxWidth='xs'>
+            <Container>
                 <BottomNavigation
                 className={classes.root}
                 value={value}
@@ -22,9 +22,9 @@ const UserPage = () => {
                 }}
                 showLabels
                 >
-                <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
-                <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-                <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
+                <BottomNavigationAction label="Videos" icon={<VideocamIcon />} />
+                <BottomNavigationAction label="Images" icon={<PanoramaIcon />} />
+                <BottomNavigationAction label="Downloads" icon={<FolderIcon />} />
             
             </BottomNavigation>
             </Container>

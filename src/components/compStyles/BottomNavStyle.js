@@ -2,9 +2,10 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyle = makeStyles({
     root: {
-    width: 250,
+    width: '100%',
     position: 'fixed',
     bottom: 0,
+    left: 0,
   },
 });
 
