@@ -1,4 +1,3 @@
-import React, { Component } from 'react';
 import Container from '@material-ui/core/Container';
 
 import BottomNavigation from '@material-ui/core/BottomNavigation';
@@ -7,10 +6,11 @@ import RestoreIcon from '@material-ui/icons/Restore';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 
-const [value, setValue] = React.useState(0);
-class UserPage extends Component {
-    render() {
-        return (
+
+const UserPage = () => {
+     const [value, setValue] = React.useState(0);
+    return (
+            <>
             <Container>
                  <BottomNavigation
                 
@@ -18,16 +18,17 @@ class UserPage extends Component {
                 onChange={(event, newValue) => {
                      setValue(newValue);
                 }}
-      showLabels
-            >
+                showLabels
+                >
                 <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
                 <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
                 <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
             
             </BottomNavigation>
             </Container>
-        )
-    }
+        </>
+    )
+    
 }
 
 export default UserPage;
