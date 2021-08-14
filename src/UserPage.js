@@ -5,9 +5,8 @@ import BottomNav from './components/BottomNav';
 class UserPage extends Component {
     render() {
         return (
-           
             <Container>
-            <BottomNav/>
+                <BottomNav/>
             </Container>
 
         )

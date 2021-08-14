@@ -6,6 +6,7 @@ import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import VideocamIcon from '@material-ui/icons/Videocam';
 import PanoramaIcon from '@material-ui/icons/Panorama';
 import FolderIcon from '@material-ui/icons/Folder';
+import HomeIcon from '@material-ui/icons/Home';
 
 
 
@@ -22,6 +23,7 @@ const BottomNav = () => {
                 }}
       showLabels
             >
+                <BottomNavigationAction label="Home" icon={<HomeIcon />} />
                 <BottomNavigationAction label="Videos" icon={<VideocamIcon />} />
                 <BottomNavigationAction label="Images" icon={<PanoramaIcon />} />
                 <BottomNavigationAction label="Downloads" icon={<FolderIcon />} />
