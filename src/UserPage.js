@@ -6,7 +6,7 @@ import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
 import RestoreIcon from '@material-ui/icons/Restore';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
-import useStyles from './compStyles/BottomNavStyle';
+import useStyles from './components/compStyles/BottomNavStyle';
 
 const UserPage = () => {
      const classes = useStyles();
