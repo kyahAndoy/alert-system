@@ -7,11 +7,9 @@ import RestoreIcon from '@material-ui/icons/Restore';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 
-
+const [value, setValue] = React.useState(0);
 class UserPage extends Component {
     render() {
-       
-        const [value, setValue] = React.useState(0);
         return (
             <Container>
                  <BottomNavigation
