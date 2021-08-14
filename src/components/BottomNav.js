@@ -15,7 +15,7 @@ const BottomNav = () => {
     return (
         <>
             <BottomNavigation
-               
+                className={classes.root};
                 value={value}
                 onChange={(event, newValue) => {
                      setValue(newValue);
