@@ -8,7 +8,7 @@ import RestoreIcon from '@material-ui/icons/Restore';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 
-const BottomNavigation = () => {
+const BottomNav = () => {
     const classes = useStyles();
     const [value, setValue] = React.useState(0);
     return (
@@ -22,4 +22,4 @@ const BottomNavigation = () => {
     )
 }
 
-export default BottomNavigation;
+export default BottomNav;

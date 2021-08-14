@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import BottomNavigation from './components/BottomNavigation';
+import BottomNav from './components/BottomNav';
 
 
 class UserPage extends Component {
     render() {
         return (
-            <BottomNavigation></BottomNavigation>
+            <BottomNav></BottomNav>
         )
     }
 }
