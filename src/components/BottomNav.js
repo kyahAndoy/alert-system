@@ -1,5 +1,5 @@
 import React from 'react';
-import useStyle from './compStyles/BottomNavStyle';
+import useStyles from './compStyles/BottomNavStyle';
 
 
 import BottomNavigation from '@material-ui/core/BottomNavigation';
@@ -13,7 +13,9 @@ const BottomNav = () => {
     const [value, setValue] = React.useState(0);
     return (
         <>
-            <BottomNavigation>
+            <BottomNavigation
+            className={classes.root}
+            >
                 <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
                 <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
                 <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
