@@ -16,9 +16,10 @@ function App() {
   return (
     
     <>
-    <Divider />
+    
 
       <Router>
+       <Divider />
       <BottomNav />
             <Switch>
               <Route exact path="/" component={Home} />
