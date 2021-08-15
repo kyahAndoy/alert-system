@@ -14,9 +14,11 @@ import BottomNav from './components/BottomNav';
 
 function App() {
   return (
-  
-      <Router>
+    
+    
     <Divider />
+
+      <Router>
       <BottomNav />
             <Switch>
               <Route exact path="/" component={Home} />
