@@ -7,14 +7,14 @@ import VideocamIcon from '@material-ui/icons/Videocam';
 import PanoramaIcon from '@material-ui/icons/Panorama';
 import FolderIcon from '@material-ui/icons/Folder';
 import HomeIcon from '@material-ui/icons/Home';
-import Divider from '@material-ui/core/Divider';
+import { Link } from 'react-router-dom';
 
 
 const BottomNav = () => {
     const classes = useStyles();
     const [value, setValue] = React.useState(0);
     return (
-        <>  <Divider/>
+        <>  
             <BottomNavigation
                 className={classes.root}
                 value={value}
@@ -23,10 +23,15 @@ const BottomNav = () => {
                 }}
       showLabels
             >
-                <BottomNavigationAction label="Home" icon={<HomeIcon />} />
-                <BottomNavigationAction label="Videos" icon={<VideocamIcon />} />
-                <BottomNavigationAction label="Images" icon={<PanoramaIcon />} />
-                <BottomNavigationAction label="Downloads" icon={<FolderIcon />} />
+               
+                <BottomNavigationAction label="Home" icon={<HomeIcon />} component={Link}
+        to="/"/>
+                <BottomNavigationAction label="Videos" icon={<VideocamIcon />} component={Link}
+        to="/videos"/>
+                <BottomNavigationAction label="Images" icon={<PanoramaIcon />} component={Link}
+        to="/images"/>
+                <BottomNavigationAction label="Downloads" icon={<FolderIcon />} component={Link}
+        to="/downloads"/>
             </BottomNavigation>
         </>
     )

@@ -1,14 +1,11 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
-import BottomNav from './components/BottomNav';
-
 
 export default function Home() {
    
     return (
-            <Container>
-                <BottomNav/>
-            </Container>
+        <div>
+            <h1>Home Page</h1>
+        </div>
         )
     }
 
