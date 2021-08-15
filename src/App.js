@@ -15,7 +15,7 @@ import BottomNav from './components/BottomNav';
 function App() {
   return (
     
-    
+    <>
     <Divider />
 
       <Router>
@@ -27,7 +27,7 @@ function App() {
               <Route path="/downloads" component={Downloads} />
             </Switch>
          </Router>
-       
+       </>
   );
 }
 
