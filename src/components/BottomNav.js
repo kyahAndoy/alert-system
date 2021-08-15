@@ -8,13 +8,15 @@ import PanoramaIcon from '@material-ui/icons/Panorama';
 import FolderIcon from '@material-ui/icons/Folder';
 import HomeIcon from '@material-ui/icons/Home';
 import { Link } from 'react-router-dom';
-
+import { Divider } from '@material-ui/core';
 
 const BottomNav = () => {
     const classes = useStyles();
     const [value, setValue] = React.useState(0);
     return (
         <>  
+        
+        <Divider />
             <BottomNavigation
                 className={classes.root}
                 value={value}
