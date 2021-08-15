@@ -16,7 +16,7 @@ const BottomNav = () => {
     return (
         <>  
         
-        <Divider />
+        
             <BottomNavigation
                 className={classes.root}
                 value={value}
@@ -25,7 +25,7 @@ const BottomNav = () => {
                 }}
       showLabels
             >
-               
+              <Divider /> 
                 <BottomNavigationAction label="Home" icon={<HomeIcon />} component={Link}
         to="/"/>
                 <BottomNavigationAction label="Videos" icon={<VideocamIcon />} component={Link}
