@@ -1,25 +1,23 @@
 import React from 'react';
 import './App.css';
-import UserPage from './UserPage';
 import {
   BrowserRouter as Router, Switch, Route
 } from "react-router-dom";
+
+import Home from './Home';
+import Videos from './Videos';
+import Images from './Images';
+import Downloads from './Downloads';
+
 
 function App() {
   return (
     <Router>
             <Switch>
-              <Route exact path="/" component={UserPage} />
-              {/* <Route path="/login" component={Login} />
-              <Route path="/register" component={Register} />
-              <Route path="/welcome" component={TransactionType} />
-              <Route path="/bir-transactions" component={BIRTransactions} />
-              <Route path="/profiles" component={Profiles} />
-              <Route path="/profile-creation" component={ProfileCreationForm} />
-              <Route path="/dashboard" component={Dashboard} />
-              <Route path="/tax-filing" component={TaxFilingForm} />
-              <Route path="/payment" component={Payment} />
-              <Route path="/*" component={Page404} /> */}
+              <Route exact path="/" component={Home} />
+              <Route exact path="/videos" component={Videos} />
+              <Route exact path="/images" component={Images} />
+              <Route exact path="/downloads" component={Downloads} />
             </Switch>
           </Router>
   );

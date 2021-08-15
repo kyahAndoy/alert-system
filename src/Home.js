@@ -1,15 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Container from '@material-ui/core/Container';
 import BottomNav from './components/BottomNav';
 
-class UserPage extends Component {
-    render() {
-        return (
+
+export default function Home() {
+   
+    return (
             <Container>
                 <BottomNav/>
             </Container>
-
         )
     }
-}
-export default UserPage;
+

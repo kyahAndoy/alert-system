@@ -6,6 +6,7 @@ const useStyle = makeStyles({
     position: 'fixed',
     bottom: 0,
     left: 0,
+    borderTop: '#78909C',
   },
 });
 
