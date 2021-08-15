@@ -10,9 +10,11 @@ import Images from './Images';
 import Downloads from './Downloads';
 import BottomNav from './components/BottomNav';
 
+
+
 function App() {
   return (
-    <>
+  
       <Router>
       <BottomNav />
             <Switch>
@@ -23,7 +25,6 @@ function App() {
             </Switch>
          </Router>
        
-      </>
   );
 }
 

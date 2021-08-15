@@ -1,6 +1,7 @@
 import React from 'react';
 
-export default function Downloads(){
+
+export default function Videos(){
     return (
         <div>
             <h1>Download Page</h1>
