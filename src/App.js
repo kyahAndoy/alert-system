@@ -9,6 +9,7 @@ import Videos from './Videos';
 import Images from './Images';
 import Downloads from './Downloads';
 import BottomNav from './components/BottomNav';
+import Container from "@material-ui/core/Container";
 
 
 
@@ -16,17 +17,16 @@ function App() {
   return (
     
     <>
-    
-
       <Router>
-       
-      <BottomNav />
+        <Container maxWidth="xs">
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/videos" component={Videos} />
               <Route path="/images" component={Images} />
               <Route path="/downloads" component={Downloads} />
-            </Switch>
+        </Switch>
+        <BottomNav />
+        </Container>
          </Router>
        </>
   );
